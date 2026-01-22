@@ -8,5 +8,7 @@ we also denoise and clean the background of the image. Then we find out the cont
 
 Out of the contours retrived we go ahead and select the contours that are panels in the comic.
 
+Once the panels are identified , we can read the text from panels using AWS Textract.
+
 disclaimer :
   Due to possible copyright issue uploading only one sample comic image
