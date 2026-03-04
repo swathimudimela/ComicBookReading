@@ -20,6 +20,7 @@ Different Approaches Tried so far :
   Approach 4: Finetune the YOLO model to identify the panels in the comic Page.
 
 Working Code : ComicBookReading.ipynb
+
   The approach here is to detect panels in the comic Image strip using the YOLO hugging face model.
   All the detected panels are then sorted in westren comic book order. Ordered panels are cropped from the original image and then passed to the hugging face
   image-text-to-text model to extract text from the panels. The extracted text is then forwarded to the text-to-speech hugging face model.
