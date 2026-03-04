@@ -19,6 +19,16 @@ Different Approaches Tried so far :
 
   Approach 4: Finetune the YOLO model to identify the panels in the comic Page.
 
+Working Code : ComicBookReading.ipynb
+  The approach here is to detect panels in the comic Image strip using the YOLO hugging face model.
+  All the detected panels are then sorted in westren comic book order. Ordered panels are cropped from the original image and then passed to the hugging face
+  image-text-to-text model to extract text from the panels. The extracted text is then forwarded to the text-to-speech hugging face model.
+
+  Hugging Face models used : 
+    Panel Detection: mosesb / best-comic-panel-detection.
+    Image-text-to-text : Zai-org/GLM-OCR
+    Text-to-speech : hexgrad/Kokoro-82M
+
 Samples of Few Comic Page layouts : 
 ![1](https://github.com/user-attachments/assets/086894db-bd8c-445b-a523-21074d678c75)
 ![2](https://github.com/user-attachments/assets/245bbec0-6ebd-40f5-9d98-2f1d5df74e6f)
